@@ -13,4 +13,10 @@ public class PatientsController {
         return "patientInfo";
     }
 
+    @GetMapping("/doctor/patients/qq")
+    public String dummyPatient(Model model) {
+        model.addAttribute("fio", "Петров Иннокентий Иванович");
+        return "redirect:/doctor";
+    }
+
 }
